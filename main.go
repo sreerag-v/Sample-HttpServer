@@ -134,7 +134,7 @@ func (S *APiServer) DeleteUser(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	dbConn := "postgres://user:password@localhost/dbname?sslmode=disable" // Update with your database connection string
+	dbConn := "postgres://user:password@localhost/dbname?sslmode=disable"
 	server, err := NewApiServer(":8080", dbConn)
 	if err != nil {
 		log.Fatal("Error initializing server:", err)
